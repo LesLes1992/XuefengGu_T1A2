@@ -13,13 +13,14 @@
 }
 header {
     display: flex;
-    margin: 1em 0;
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
+    z-index: 2;
     align-items: center;
     top:0;
     background-color: antiquewhite;
+    border-radius: 5%
 }
 
 header img {
@@ -29,11 +30,6 @@ header img {
     height: 100px;
 }
 
-/* header .nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 header li,a {
     color: #686668;
     margin: 10px 1rem;
@@ -47,11 +43,11 @@ li .hover-content:hover {
 
 #intro {
     display: flex;
-    margin-top: 25px;
     flex-wrap: wrap;
     background-color: antiquewhite;
     justify-content: center;
     align-items: center;
+    border-radius: 5%;
 
 }
 #intro-list{
@@ -142,17 +138,69 @@ li .hover-content:hover {
     top: 475px;
 }
 
-#personality-td-1:hover #personality-content1{
+#profile-1 td:hover #personality-content1{
     top:415px;
     left:0;
 }
 
 
-#profile-2, #profile-3{
-    width:50%;
-    background-color: blue;
+#profile-2{
+    width:100vw;
+    position: relative;
+    display: flex;
+    background-color: antiquewhite;  
 }
 
+#profile-2 img {
+    width: 100%;
+    opacity: 0.7;
+
+}
+
+#profile-2 h2{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    
+}
+#profile-3{
+    width:100vw;
+    position: relative;
+    display: flex;
+    background-color: rgb(243, 141, 7);  
+}
+#profile-3 img {
+    width: 100%;
+}
+
+#profile-3 h2{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;   
+}
+
+#profile-4{
+    width:100vw;
+    position: relative;
+    display: flex;
+    background-color: rgb(211, 211, 211);  
+}
+#profile-4 img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#profile-4 h2{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;   
+}
 footer {
     width: 100%;
     height: auto 0;

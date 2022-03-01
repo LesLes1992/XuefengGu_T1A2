@@ -15,12 +15,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: sticky;
-    z-index: 2;
     align-items: center;
     top:0;
     background-color: antiquewhite;
-    border-radius: 5%
 }
 
 header img {
@@ -47,7 +44,8 @@ li .hover-content:hover {
     background-color: antiquewhite;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
+    max-width: 100%;
+    margin-top: 2rem;
 
 }
 #intro-list{
@@ -63,19 +61,18 @@ li .hover-content:hover {
 }
 
 #intro-pic{
-    margin-top: 1rem;
+    margin: 1rem 0 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    /* justify-content: center; */
 }
 
 #intro-pic img {
  width: 75vw;
  height: 75vw;
- border-radius: 5%;
+ border-radius: 15px;
 }
 
 #intro #hov-pic {
@@ -86,7 +83,6 @@ li .hover-content:hover {
     position: absolute;
     top:0;
     right:-75vw;
-    
 }
 
 #intro-pic:hover #hov-pic{
@@ -103,13 +99,14 @@ li .hover-content:hover {
 #profile-1{
     width:100%;
     height: 475px;
-    background-color:grey;;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
     position:relative;
     overflow: hidden;
     text-align: center;
+    margin-top: 2rem;
 }
 
 #profile-1 h2 {
@@ -148,12 +145,15 @@ li .hover-content:hover {
     width:100vw;
     position: relative;
     display: flex;
+    margin-top: 2rem;
     background-color: antiquewhite;  
 }
 
 #profile-2 img {
     width: 100%;
     opacity: 0.7;
+    object-fit: cover;
+    flex: 1;
 
 }
 
@@ -169,7 +169,8 @@ li .hover-content:hover {
     width:100vw;
     position: relative;
     display: flex;
-    background-color: rgb(243, 141, 7);  
+    margin-top: 2rem;
+    background-color: antiquewhite;  
 }
 #profile-3 img {
     width: 100%;
@@ -187,11 +188,12 @@ li .hover-content:hover {
     width:100vw;
     position: relative;
     display: flex;
-    background-color: rgb(211, 211, 211);  
+    margin-top: 2rem;
+    background-color: antiquewhite;  
 }
 #profile-4 img {
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 #profile-4 h2{
@@ -202,6 +204,7 @@ li .hover-content:hover {
     z-index: 1;   
 }
 footer {
+    margin-top: 2rem;
     width: 100%;
     height: auto 0;
     display: flex;
@@ -209,11 +212,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding-top:1vh;
+    background-color: antiquewhite;
 }
-footer a{
+footer .social-media{
     font-size: 2rem;
     color: #a9a8a9;
-    margin: 2rem 0.5rem;
+    margin: 1rem 0.5rem;
 }
 footer .copyright{
     margin-top:1vh;

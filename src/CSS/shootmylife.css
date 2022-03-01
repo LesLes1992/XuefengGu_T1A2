@@ -9,51 +9,54 @@
   
   body {
     background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
   }
   
   #device-viewport {
     max-width: 1226px;
+    margin:0 auto;
   }
+
   header {
     display: flex;
-    width: 90vw;
-    margin: 1rem auto 0;
     flex-wrap: wrap;
     justify-content: space-between;
+    top: 0;
+    width:90vw;
+    margin: 0 auto;
     background-color: antiquewhite;
   }
   
-  header #icon {
+  header img {
     margin: 10px;
     border-radius: 33px;
     width: 100px;
     height: 100px;
   }
   
-  header li {
-      margin: 10px;
-      text-align: right;
-  }
-  header a {
+  header li,
+  a {
     color: #686668;
-    
+    margin: 10px 5px;
+    text-align: right;
   }
-  header li a:hover {
+  
+  li .hover-content:hover {
     color: black;
     text-decoration: line-through;
   }
-  
+
   .image {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
   }
   .image img {
-    width: 90vw;
+    /* width: 90vw; */
     margin: 1rem 0;
     border-radius: 10px;
+    width: 90vw;
   }
   footer {
     margin-top: 1rem;
@@ -74,7 +77,7 @@
     width: 90vw;
   }
   footer .social-media a {
-      color: #686668;
+    color: #686668;
   }
   footer .copyright {
     margin-top: 1vh;

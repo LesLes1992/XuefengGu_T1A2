@@ -6,11 +6,11 @@
     text-decoration: none;
     color: #686668;
     list-style-type: none; 
-    background-color: rgb(241, 241, 240)
 }
 #device-viewport{
     max-width: 1226px;
     margin: 0 auto;
+    background-color: rgb(241, 241, 240)
 } 
 header{
     width:100%;
@@ -54,7 +54,6 @@ section{
     line-height: 1.5rem;
 }
 
-
 #intro-pic{
     margin: 1rem 0 ;
     justify-content: center;
@@ -95,7 +94,9 @@ main {
 }
 #profile-1{
     width:100%;
-    height: 400px;
+    height: 100vw;
+    min-height: 250px;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,37 +112,45 @@ main {
 }
 #image-list{
     display: flex;
-    width:50vw;
+    width: 60%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
 }
+
 #image-list img{
-    width: 50%;
+    width: 40%;
+    margin:0.2rem;
+    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
+    transition: 0.3s;
 }
+ #img-1:hover, #img-2:hover,#img-3:hover,#img-4:hover {
+    box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
+    margin-top: 0.1rem;
+}
+
 .personality-content{
-    width: 100vw;
+    width: 100%;
     position: absolute;
-    height: auto;
-    top:400px;
     background-color: yellow;
+    bottom: -4rem;
 }
 
 #img-1:hover~#personality-content1{
-    top:360px;
+    bottom: 0;
 }
 
 #img-2:hover~#personality-content2{
-    top:360px;
+    bottom: 0;
 }
 
 #img-3:hover~#personality-content3{
-    top:360px;
+    bottom: 0;
 }
 
 #img-4:hover~#personality-content4{
-    top:360px;
+    bottom: 0;
 }
 #profile-2{
     width:100vw;
@@ -250,39 +259,15 @@ footer .copyright{
     main{
         flex-direction: row;
     }
-    #profile-1, #profile-2, #profile-3, #profile-4{
-        width:45%;
-        height:45vw;
-        margin: 0;
+    #profile-1,#profile-2, #profile-3, #profile-4{
+    width:45%;
+    height:45vw;
+    min-height:200px;
+    margin: 0;
     }
     #image-list {
         margin: 0;
-    }
-    #image-list img{
-        width: 35%;
-    }
-    .personality-content{
-        width: 100vw;
-        position: absolute;
-        height: auto;
-        top:45vw;
-        background-color: yellow;
-    }
-    
-    #img-1:hover~#personality-content1{
-        top:5vw;
-    }
-    
-    #img-2:hover~#personality-content2{
-        top:5vw;
-    }
-    
-    #img-3:hover~#personality-content3{
-        top:5vw;
-    }
-    
-    #img-4:hover~#personality-content4{
-        top:5vw;
+        width:50%;
     }
   }
   @media only screen and (min-width: 811px) {
@@ -316,6 +301,7 @@ footer .copyright{
     }
     #intro-list p{
         font-size: 1.5rem;
+        line-height: 2rem;
     }
     #intro-pic img {
         width: 30vw;
@@ -336,43 +322,45 @@ footer .copyright{
         flex-direction: row;
         align-self: center;
         margin:0 auto;
+        padding: 2rem;
     }
     #profile-1, #profile-2, #profile-3, #profile-4{
-        width:25%;
-        height:300px;
+        width:25vw;
+        height:25vw;
+        max-width:290px;
+        max-height:290px;
         margin: 0;
+        min-height:200px;
         overflow: hidden;
     }
-    #profile-2 #img-2{
-        size
-    }
+
     #image-list {
         margin: 0;
-    }
-    #image-list img{
-        width: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
     }
     .personality-content{
-        width: 100vw;
+        width: 100%;
         position: absolute;
         height: auto;
-        top:45vw;
+        bottom:-4rem;
         background-color: yellow;
     }
     
     #img-1:hover~#personality-content1{
-        top:5vw;
+        bottom:0;
     }
     
     #img-2:hover~#personality-content2{
-        top:5vw;
+        bottom:0;
     }
     
     #img-3:hover~#personality-content3{
-        top:5vw;
+        bottom:0;
     }
     
     #img-4:hover~#personality-content4{
-        top:5vw;
+        bottom:0;
     } 
   }

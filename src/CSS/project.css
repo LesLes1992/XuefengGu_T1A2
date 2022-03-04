@@ -95,16 +95,19 @@ footer .copyright {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-
   .project .content{
     width: 50%;
-    padding: 1rem;
+    padding:1rem;
   }
   .project img {
-    margin-bottom: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
+    transition: 0.3s;
   }
   .project img:hover {
-    margin-bottom:1rem;
+    box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
+    margin-top:1.5rem;
   }
 }
 @media only screen and (min-width: 811px) {

@@ -39,7 +39,7 @@ header li {
   color: black;
   text-decoration: line-through;
 }
-section {
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,21 +59,22 @@ section {
   width: 100%;
   padding: 1rem;
 }
-.wrapper main {
+.wrapper article {
   padding: 0.5rem;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
 }
-.wrapper h1 {
+.wrapper h4 {
   font-size: 28px;
 }
-.wrapper time,
-.wrapper author{
-  font-size:14px;
+.wrapper .a-t {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
   border-left: 3px #686668 dotted;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .wrapper p {
   width: 100%;
@@ -101,9 +102,15 @@ footer .copyright {
 .sidebar {
   display: none;
 }
-#content > a {
-  position: sticky;
-  right: 0;
+.sidebar .sidebar-content {
+  border: 1px darkgreen dotted;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 @media only screen and (min-width: 440px) {
   header {
@@ -124,16 +131,15 @@ footer .copyright {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-  .wrapper h1 {
+  .wrapper h4 {
     font-size: 36px;
   }
-  .wrapper time,
-  .wrapper author {
+  .wrapper .a-t {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 780px) {
-  section {
+  main {
     width: 75%;
     padding-left: 1rem;
   }
@@ -143,15 +149,5 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-  }
-  .sidebar sidebar {
-    border: 1px darkgreen dotted;
-    width: 100%;
-    height: 150px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1rem;
   }
 }

@@ -35,11 +35,11 @@ header li {
   color: black;
   text-decoration: line-through;
 }
-main {
+article {
   margin: 2rem;
   text-align: center;
 }
-article>div{
+main>div{
     text-align: center;
     line-height: 2rem;
     margin-bottom: 2rem;

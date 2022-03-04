@@ -20,7 +20,11 @@ header {
   padding: 0 40px;
   padding-top: 1rem;
 }
-
+main>div{
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
 header img {
   width: 50px;
   height: 50px;
@@ -39,11 +43,7 @@ article {
   margin: 2rem;
   text-align: center;
 }
-main>div{
-    text-align: center;
-    line-height: 2rem;
-    margin-bottom: 2rem;
-}
+
 footer {
   width: 100%;
   height: auto 0;

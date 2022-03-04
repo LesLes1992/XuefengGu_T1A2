@@ -22,9 +22,8 @@ header {
 }
 
 header img {
-  border-radius: 33%;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 header li {
@@ -32,7 +31,7 @@ header li {
   text-align: right;
 }
 
-header li .hover-content:hover {
+.hover-content:hover {
   color: black;
   text-decoration: line-through;
 }

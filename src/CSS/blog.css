@@ -26,7 +26,6 @@ header {
 }
 
 header img {
-  border-radius: 33%;
   width: 100px;
   height: 100px;
 }
@@ -36,7 +35,7 @@ header li {
   text-align: right;
 }
 
-header li .hover-content:hover {
+.hover-content:hover {
   color: black;
   text-decoration: line-through;
 }
@@ -68,11 +67,11 @@ section {
   justify-content: space-around;
 }
 .wrapper h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 .wrapper time,
-.wrapper author {
-  font: bolder 16px;
+.wrapper author{
+  font-size:14px;
   border-left: 3px #686668 dotted;
   padding-left: 2rem;
 }
@@ -124,6 +123,13 @@ footer .copyright {
   header li {
     margin: 2rem 1rem 1rem;
     text-align: right;
+  }
+  .wrapper h1 {
+    font-size: 36px;
+  }
+  .wrapper time,
+  .wrapper author {
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 780px) {

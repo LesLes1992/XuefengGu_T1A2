@@ -23,7 +23,6 @@ header {
 }
 
 header img {
-  border-radius: 33%;
   width: 100px;
   height: 100px;
 }
@@ -33,7 +32,7 @@ header li {
   text-align: right;
 }
 
-header li .hover-content:hover {
+.hover-content:hover {
   color: black;
   text-decoration: line-through;
 }
@@ -47,11 +46,11 @@ section {
 }
 #intro-list {
   width: 100%;
-}
-#intro-list p {
   margin: 1rem;
-  font-weight: bold;
   line-height: 1.5rem;
+}
+#intro-list h2{
+  padiing-top:1.5rem;
 }
 
 #intro-pic {

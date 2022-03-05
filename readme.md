@@ -1,8 +1,8 @@
 # T1A2 - Portfolio Website
 
-[makecoolstuff](https://makecoolstuff.net)
+[makecoolstuff](https://lesles1992.github.io/XuefengGu_T1A2/index.html)
 
-[github repo](hhttps://github.com/LesLes1992/XuefengGu_T1A2)
+[github repo](https://github.com/LesLes1992/XuefengGu_T1A2)
 
 ## Purpose
 
@@ -12,49 +12,48 @@ This is a project to practice HTML and CSS skills. The website shows my personal
 
 This site structure features 5 pages to direct the audience to view my work and contact me directly:
 
-- The Home page contains a hero/call to action banner at the top of the page to hook attention, along with a short blurb.
+- The Home page 4 part navibar, intro, personal content display(personality/interest/blog/project), footer.
 
-- The Projects page contains a link to all my various projects for employers to view.
+- The Projects page contains a link to all my projects.
 
-- The Blog page contains sequential articles I've written on various topics (currently placeholders until I write some content)
+- The Blog page contains 5 blogs about the cities I was born, studied and worked in.
 
-- The Contact page contains a form for clients and employers to send me a message and get in touch.
+- The Resume page show a mocked up resume which will update in the future.
 
-- The Resume page features a styled version of my resume, along with a link to download the plain PDF version.
+- The shoot@mylife page shows the photograph I shot during travelling.
 
-All pages contain a Nav bar with links to each page that is collapsible on Mobile. They also contain a footer at the end of each page with links to my GitHub and LinkedIn profiles.
+All pages are responsive between different screen sizes .
 
 ## Site Map
 
-Each site is linked to each other, Blog posts are linked seperately on the Blog page.
+Home page will link to all the other web.
 
-![Site Map](./docs/sitemap.png)
+![Site Map](./docs/site-map.png)
 
 ## Screenshots
 
 ### Home
-![home](./docs/home.png)
-### Projects
-![projects](./docs/projects.png)
+![home](./docs/Home.jpg)
+### Project
+![projects](./docs/Project.jpg)
 ### Blog
-![blog](./docs/blog.png)
-### Contact
-![contact](./docs/contact.png)
+![blog](./docs/Blog.jpg)
+### Interest
+![contact](./docs/Interest.jpg)
 ### Resume
-![resume](./docs/resume.png)
+![resume](./docs/Resume.jpg)
 
 ## Target Audience
 
-Target Audience is prospective clients and employers.
+Target Audience is all the employers .
 
-Site will be completely responsive to mobile, tablet and desktop audience. Accessibility will be a high priority as well to include audiences with disabilities.
+The website is friendly to screen reader users.
 
 ## Tech stack
 
-Site will be build statically by hand with basic HTML, CSS and Javascript on no framework. I will likely update this with a framework in future to be able to easily update my site.
+The site is using tech with css and html. In the future I will constantly upgrade with new techs and make sure this portfolio website fancier.
 
-Site will be deployed on Netlify.
-
+This website will be deploied on github page.
 
 
 #

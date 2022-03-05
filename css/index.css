@@ -73,6 +73,7 @@ section {
   justify-content: center;
   max-width: 330px;
   max-height: 330px;
+  overflow: hidden;
 }
 
 #intro-pic img {

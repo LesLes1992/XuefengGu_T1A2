@@ -7,11 +7,13 @@
   color: #686668;
   list-style-type: none;
 }
+/* To maximise the width of viewport to 1226px. */
 #device-viewport {
   max-width: 1226px;
   margin: 0 auto;
   background-color: rgb(241, 241, 240);
 }
+
 header {
   width: 100%;
   display: flex;
@@ -35,7 +37,8 @@ header li {
   color: black;
   text-decoration: line-through;
 }
-.project{
+
+main{
   width: 100%;
   display: flex;
   margin-top: 1rem;
@@ -43,20 +46,24 @@ header li {
   justify-content: center;
   align-items: center;
 }
-.project .content{
+
+main .content{
   width: 100%;
   padding:1rem 2rem;
 }
-.project img {
+
+main img {
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
   transition: 0.3s;
 }
-.project img:hover {
+
+main img:hover {
   box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
   margin-top:1.5rem;
 }
+
 footer {
   width: 100%;
   height: auto 0;
@@ -66,15 +73,18 @@ footer {
   align-items: center;
   margin-top: 1rem;
 }
+
 footer .social-media {
   font-size: 2rem;
   margin: 0.5rem;
 }
+
 footer .copyright {
-  margin-top: 1vh;
   margin-bottom: 1rem;
   text-align: center;
 }
+
+/* All the css below set up layout when screen width is between 468px and 810px like a tablet */
 @media only screen and (min-width: 468px) and (max-width: 810px) {
   header {
     width: 100%;
@@ -91,25 +101,30 @@ footer .copyright {
     justify-content: center;
     align-items: center;
   }
+
   header li {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-  .project .content{
+  
+  main .content{
     width: 50%;
     padding:1rem;
   }
-  .project img {
+
+  main img {
     width: 100%;
     margin-bottom: 1rem;
     box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
     transition: 0.3s;
   }
-  .project img:hover {
+
+  main img:hover {
     box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
     margin-top:1.5rem;
   }
 }
+/* All the css below set up layout when screen width is over 811px like a desktop */
 @media only screen and (min-width: 811px) {
   header {
     width: 100%;
@@ -126,11 +141,13 @@ footer .copyright {
     justify-content: center;
     align-items: center;
   }
+
   header li {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-  .project .content{
+  
+  main .content{
     width: 33%;
     padding:1rem;
   }

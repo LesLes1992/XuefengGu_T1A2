@@ -7,11 +7,14 @@
   color: #686668;
   list-style-type: none;
 }
+
+/* To maximise the width of viewport to 1226px. */
 #device-viewport {
   max-width: 1226px;
   margin: 0 auto;
   background-color: rgb(241, 241, 240);
 }
+
 header {
   width: 100%;
   display: flex;
@@ -20,11 +23,7 @@ header {
   padding: 0 40px;
   padding-top: 1rem;
 }
-main>div{
-  text-align: center;
-  line-height: 2rem;
-  margin-bottom: 2rem;
-}
+
 header img {
   width: 50px;
   height: 50px;
@@ -39,9 +38,16 @@ header li {
   color: black;
   text-decoration: line-through;
 }
+
 article {
   margin: 2rem;
   text-align: center;
+}
+
+main{
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -53,15 +59,19 @@ footer {
   align-items: center;
   padding-top: 1vh;
 }
+
 footer .social-media {
   font-size: 2rem;
   margin: 0.5rem;
 }
+
 footer .copyright {
   margin-top: 1vh;
   margin-bottom: 1rem;
   text-align: center;
 }
+
+/* All the css below set up layout when screen width over 440px like a tablet and desktop*/
 @media only screen and (min-width: 440px) {
     header {
       width: 100%;

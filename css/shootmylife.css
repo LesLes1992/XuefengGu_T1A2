@@ -7,11 +7,13 @@
   color: #686668;
   list-style-type: none;
 }
+/* To maximise the width of viewport to 1226px. */
 #device-viewport {
   max-width: 1226px;
   margin: 0 auto;
   background-color: rgb(241, 241, 240);
 }
+
 header {
   width: 100%;
   display: flex;
@@ -35,24 +37,23 @@ header li {
   color: black;
   text-decoration: line-through;
 }
-.image {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  padding: 0 2rem;
+
+.image .content{
+  margin: 2rem;
 }
+
 .image img {
   width: 100%;
-  margin-top: 1rem;
   box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
   transition: 0.3s;
+  margin-bottom: 0.5rem
 }
+
 .image img:hover {
   box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
-  margin-right: 1.5rem;
-}
+  margin-top: 1rem;
+} 
+
 footer {
   width: 100%;
   height: auto 0;
@@ -60,18 +61,21 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1vh;
+  padding-top: 1rem;
 }
+
 footer .social-media {
   font-size: 2rem;
   margin: 0.5rem;
 }
+
 footer .copyright {
-  margin-top: 1vh;
   margin-bottom: 1rem;
   text-align: center;
 }
-@media only screen and (min-width: 468px) and (max-width: 810px) {
+
+/* All the css below set up layout when screen width 468px to 810px like a tablet */
+ @media only screen and (min-width: 468px) and (max-width: 810px) {
   header {
     width: 100%;
     display: flex;
@@ -87,28 +91,32 @@ footer .copyright {
     justify-content: center;
     align-items: center;
   }
+
   header li {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-  .image {
-    margin-top: 1rem;
+
+  main{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .image {
+    width: 50%;
+    display: flex;
+    padding:1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .image .content {
     width: 100%;
+    margin:0.5rem 0;
   }
-  .image img {
-    width: 40%;
-    margin: 0.8rem;
-    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
-    transition: 0.3s;
-  }
-  .image img:hover {
-    box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
-    margin-top: 0.5rem;
-  }
-}
+} 
+/* All the css below set up layout when screen width over 810px on computer environment */
 @media only screen and (min-width: 811px) {
   header {
     width: 100%;
@@ -125,26 +133,15 @@ footer .copyright {
     justify-content: center;
     align-items: center;
   }
+  
   header li {
     margin: 2rem 1rem 1rem;
     text-align: right;
   }
-  .image {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
 
-  .image img {
-    width: 29%;
-    margin: 0.8rem;
-    box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.7);
-    transition: 0.3s;
-  }
-  .image img:hover {
-    box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.7);
-    margin-right: 1rem;
+  main{
+    display: flex;
+    width:100%;
+    justify-content:space-between;
   }
 }

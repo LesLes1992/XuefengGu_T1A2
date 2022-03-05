@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leslie's Photo Gallery</title>
-    <link rel="shortcut icon" href="./image/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/shootmylife.css" />
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/shootmylife.css" />
+    <!-- Set up icon from fontawesome -->
     <script
       src="https://kit.fontawesome.com/8fe63dc9df.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- maximise the viewport width with three parts, header, main to display my photograph, footer-->
     <div id="device-viewport">
+      <!-- header will include a logo and navigation bar -->
       <header>
         <div id="header-image">
-          <a href="./index.html" target="_blank"
-            ><img src="./image/logo.svg" alt="icon-logo"
+          <a href="../index.html" target="_blank"
+            ><img src="../image/logo.svg" alt="icon-logo"
           /></a>
         </div>
         <nav>
           <ul>
             <li>
               <a
-                href="./index.html"
+                href="../index.html"
                 target="_blank"
                 rel="home"
                 class="hover-content"
@@ -61,16 +64,38 @@
           </ul>
         </nav>
       </header>
-      <div class="image">
-        <img src="./image/Shoot1.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot2.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot3.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot8.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot10.jpg" alt="photo-gallary" />
-        <img src="./image/Shoot5.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot6.JPG" alt="photo-gallary" />
-        <img src="./image/Shoot4.jpg" alt="photo-gallary" />
-      </div>
+      <!-- Contain two column box under main box to maintain the layout under different devices -->
+      <main>
+        <div class="image">
+          <div class="content">
+            <img src="../image/Shoot1.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot3.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot5.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot10.JPG" alt="photo-gallary" />
+          </div>
+        </div>
+        <div class="image">
+          <div class="content">
+            <img src="../image/Shoot4.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot2.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot6.JPG" alt="photo-gallary" />
+          </div>
+          <div class="content">
+            <img src="../image/Shoot8.JPG" alt="photo-gallary" />
+          </div>
+        </div>
+      </main>
+      <!-- footer include social-media and copyright statement -->
       <footer>
         <div class="social-media">
           <a

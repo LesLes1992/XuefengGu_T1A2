@@ -12,7 +12,7 @@ This is a project to practice HTML and CSS skills. The website shows my personal
 
 This site structure features 5 pages to direct the audience to view my work and contact me directly:
 
-- The Home page 4 part navibar, intro, personal content display(personality/interest/blog/project), footer.
+- The Home page 4 parts, which are navibar, intro, personal content display(personality/interest/blog/project), footer.
 
 - The Projects page contains a link to all my projects.
 

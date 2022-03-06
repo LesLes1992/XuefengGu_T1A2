@@ -1,6 +1,6 @@
 # T1A2 - Portfolio Website
 
-[makecoolstuff](https://lesles1992.github.io/XuefengGu_T1A2/index.html)
+[leslie's portfolio](https://lesles1992.github.io/XuefengGu_T1A2/index.html)
 
 [github repo](https://github.com/LesLes1992/XuefengGu_T1A2)
 
